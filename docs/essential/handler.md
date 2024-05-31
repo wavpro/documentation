@@ -22,7 +22,7 @@ const demo1 = new Elysia()
     .get('/', ({ path }) => path)
 
 const demo2 = new Elysia()
-    .get('/', ({ error }) => error(418, "Kirifuji Nagisa"))
+    .get('/', ({ error }) => error(, "Kirifuji Nagisa"))
 </script>
 
 # Handler
@@ -140,7 +140,7 @@ import { Elysia } from 'elysia'
 
 new Elysia()
     .get('/', ({ set }) => {
-        set.status
+        set.status = "I'm a teapot"
           // ^?
 
         return 'Kirifuji Nagisa'
